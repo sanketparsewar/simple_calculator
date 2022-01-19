@@ -1,0 +1,170 @@
+body {
+  background-color: #a9bd7e;
+  margin-top: 50px;
+  background-image: url('bgimage.jpg');
+  background-repeat: no-repeat;
+  }
+
+div {
+  margin:auto ;
+  background-color: #9dd2ea;
+  width: 250px;
+  height: 320px;
+  text-align: center;
+  border-radius: 7px;
+  border: 15px solid black;
+  border-style: double;
+  
+}
+.calculatorimg{
+    margin-left: 30px;
+    width: 50px;
+}
+
+span:hover{
+    cursor: pointer;
+    text-shadow: 0 1px white;
+}
+
+span{
+    position: absolute;
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+#text:hover {
+    cursor: pointer;
+
+}
+
+#text {
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    color: wheat;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    /* background-color: #c5e2f0; */
+    font-size: 35px;
+    width: 41%;
+    margin-left: 308px;
+    
+}
+
+input:hover {
+  /* width: 270px; */
+  font-size: 26px;
+  text-align: center;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+  background-color: #f1faeb;
+}
+
+input {
+  font-size: 26px;
+  text-align: center;
+  background-color: #f1faeb;
+
+  font-size: 25px;
+  margin-left: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 180px;
+  height: 37px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.specail b {
+  padding: 3px 8px;
+  padding: inherit;
+  font-weight: bolder;
+  font-size: unset;
+}
+
+button {
+  /* background-color: px; */
+  box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+
+  border-radius: 5px;
+  font-size: 27px;
+  padding: 5px 15px;
+  margin: 2px 5px;
+  width: 49px;
+  height: 45px;
+}
+
+button:hover {
+  border: 0 solid #000;
+  color: #495069;
+  background-color: #d7cfe4;
+  border-radius: 4px;
+  box-shadow: 0 4px #644294;
+}
+
+.operator {
+  background-color: #f1ff92;
+  }
+
+.operator:hover {
+  background-color: #e7f56b;
+  box-shadow: 0 4px #b8bb9d;
+}
+
+.social {
+  padding-left: 0px;
+  /* position: absolute; */
+  z-index: 10;
+  /* bottom: 20px; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.social li {
+  list-style: none;
+}
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+.github a img{
+  width: 47px;
+}
+
+.facebook img:hover{
+    width:55px;
+}
+.linkedin img:hover{
+    width:55px;
+    
+}
+.insta img:hover{
+    width:55px;
+    
+}
+.github img:hover{
+    width: 55px;
+
+}
+
+footer{
+    color: whitesmoke;
+    font-size: large;
+    margin-top: 9%;
+    margin-left: 30px;
+}
+
+#copyright{
+width: 376px;
+}
+
+#copyright:hover{
+    cursor: pointer;
+    
+}
+
+
+
+
+

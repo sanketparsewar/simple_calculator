@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ssp Calculator</title>
+    <link rel="Icon" href="calculator.png">
+</head>
+
+<body>
+    <img class="calculatorimg" src="calculator.png" alt=""><span>Ssp Calculator</span>
+    <marquee id="text" behavior="slip" direction="left" scrollamount="4"> <b>Oasis Infobyte Task-3</b>... This is simple
+        Calculator!</marquee>
+    <div>
+        <input type="text" name="" id="input" placeholder="Ssp calc..."><button class="special" onclick="getInput('c')">
+            <b>&larr;</b> </button><br>
+        <button onclick="getInput(7)">7</button>
+        <button onclick="getInput(8)">8</button>
+        <button onclick="getInput(9)">9</button>
+        <button class="operator" onclick="getInput('/')">/</button><br>
+        <button onclick="getInput(4)">4</button>
+        <button onclick="getInput(5)">5</button>
+        <button onclick="getInput(6)">6</button>
+        <button class="operator" onclick="getInput('*')">*</button><br>
+        <button onclick="getInput(1)">1</button>
+        <button onclick="getInput(2)">2</button>
+        <button onclick="getInput(3)">3</button>
+        <button class="operator" onclick="getInput('-')">-</button><br>
+        <button onclick="getInput('clr')"> <b>C</b> </button>
+        <button onclick="getInput(0)">0</button>
+        <button onclick="getInput('=')">=</button>
+        <button class="operator" onclick="getInput('+')">+</button><br>
+        <ul class="social">
+            <li class="facebook">
+                <a href="https://www.facebook.com/profile.php?id=100073090603103" target="_blank"><img
+                        src="facebook.png" /></a>
+            </li>
+            <li class="linkedin">
+                <a href="https://www.linkedin.com/in/sanket-parsewar-6272b3204" target="_blank"><img
+                        src="linkedin.png" /></a>
+            </li>
+            <li class="insta">
+                <a href="https://www.instagram.com/sanketparsewar/" target="_blank"><img src="Instagram.png" /></a>
+            </li>
+            <li class="github">
+                <a href="https://github.com/sanketparsewar" target="_blank"><img src="github.png" /></a>
+            </li>
+        </ul>
+        <footer>
+            <marquee id="copyright" behavior="slide" direction="right">
+                <p>Copyright © 18 jan 2022 . All Rights Reserved SSP.</p>
+            </marquee>
+    
+        </footer>
+    </div>
+
+    <script>
+        var ok = 0;
+        function getInput(i) {
+            var x = i;
+
+            if (x == '=') {
+                document.getElementById('input').value = eval(document.getElementById('input').value)
+            }
+            else if (x == '+' || x == '-' || x == '*' || x == '/') {
+                if (ok == 0) {
+                    document.getElementById('input').value += i;
+                    ok = 1;
+                }
+
+            }
+            else if (x == 'clr') {
+                document.getElementById('input').value = '';
+                ok = 0;
+            }
+            else if (x == 'c') {
+                document.getElementById('input').value = document.getElementById('input').value.substr(0, document.getElementById('input').value.length - 1);
+                ok = 0;
+            }
+            else {
+                document.getElementById('input').value += i;
+                ok = 0;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
